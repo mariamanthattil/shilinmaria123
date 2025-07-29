@@ -14,10 +14,10 @@ import joblib
 import numpy as np
 
 # === Load trained model and encoders ===
-model = joblib.load("C:\\Users\\ADMIN\\Downloads\\best_model.pkl")
-le_store = joblib.load("C:\\Users\\ADMIN\\Downloads\\store_encoder.pkl")
-le_product = joblib.load("C:\\Users\\ADMIN\\Downloads\\product_encoder.pkl")
-final_features = joblib.load("C:\\Users\\ADMIN\\Downloads\\final_features.pkl")
+model = joblib.load("best_model.pkl")
+le_store = joblib.load("store_encoder.pkl")
+le_product = joblib.load("product_encoder.pkl")
+final_features = joblib.load("final_features.pkl")
 
 # === Load the dataset ===
 df = pd.read_csv("retail_store_inventory.csv")
